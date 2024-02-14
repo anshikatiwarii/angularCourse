@@ -1,0 +1,15 @@
+
+<br>
+<button class="btn btn-primary"
+ [disabled]="! allowtoproceed"
+ (click)="onproceed()" id="proceed">Proceed</button>
+<br>
+<br>
+ <i>{{proceedstatus}}</i>
+
+<br>
+<br>
+<br>
+<input type="text" class="form-control" 
+(input) = "onupdate($event)">
+<p>{{updatestatus}}</p>

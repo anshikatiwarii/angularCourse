@@ -1,0 +1,19 @@
+<h1>Basic Form in Angular</h1>
+<div id="form"> 
+<form #basicform="ngForm" (ngSubmit)="getData(basicform.value)">
+  <label for="name">Name  </label>
+   <input type="text" ngModel name="Name" placeholder="First Name"> <input type="text" name="Name" placeholder="Last name">
+   <br>
+   <br>
+   <label for="age">Age  </label>
+   <input type="number" ngModel name="Number" placeholder="Age">
+   <br>
+   <br>
+   <label for="Mobile number">Mobile Number  </label>
+   <input type="text" ngModel name="Number" placeholder="Mobile number">
+   <br>
+   <br>
+
+   <button>Register</button>
+</form>
+</div>

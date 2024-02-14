@@ -1,0 +1,7 @@
+
+
+
+<!-- <button (click)="showpassword = !showpassword" >Display Details</button> -->
+<button (click)="onclicking()" >Display Details</button>
+<p *ngIf=(showpassword)>Secret Password: //$$##</p>
+<div *ngFor="let index of array">{{index}}</div>

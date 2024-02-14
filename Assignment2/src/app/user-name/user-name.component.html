@@ -1,0 +1,14 @@
+<label>User-name</label>
+<input type="text" class="name" [(ngModel)]="username">
+<p>{{username}}</p>
+<br>
+<button [disabled]="username===''"
+(click)="username=''">Reset</button>
+
+<br>
+<br>
+
+<label >userid</label>
+<input type="text" class="name" [(ngModel)]="userid"> 
+<button [disabled]="userid===''" (click)="createid()">create</button>
+<p *ngIf="">{{idstatus}}</p>

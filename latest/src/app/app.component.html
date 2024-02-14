@@ -1,0 +1,47 @@
+<app-header></app-header>
+<br>
+<form class="example-form">
+  
+  <mat-form-field class="example-full-width">
+    <mat-label>New Note</mat-label>
+    <textarea matInput placeholder="Add new note here" #task ></textarea>
+  
+</mat-form-field>
+
+  <div class="example-button-row">
+    
+    <button mat-raised-button color="primary" (click)="addnote(task.value)">Add Note</button>
+  </div>
+
+  <hr>
+
+
+<ul *ngFor="let item of list">
+  <li>{{item.name}} <button mat-raised-button color="primary" (click)="removenote(item.id)" >Remove Note</button></li>
+</ul>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field> -->

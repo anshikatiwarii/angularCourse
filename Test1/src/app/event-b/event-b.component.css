@@ -1,0 +1,12 @@
+#proceed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%; 
+    background-color: yellowgreen;
+    border-radius: 6px;
+    border: none;
+    width: 30%;
+    height: 30px;
+    box-shadow: black;
+}
